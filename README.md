@@ -1,6 +1,6 @@
 Deploying spring boot application to AWS Lambda
 =
-Integrating Spring boot application into the AWS lambda runtime using [aws-serverless-java-container](https://github.com/awslabs/aws-serverless-java-container) - a Java wrapper to run Spring, Jersey, Spark, and other apps inside AWS Lambda. https://aws.amazon.com/serverless/
+Integrating Spring boot (2.X) application into the AWS lambda runtime using [aws-serverless-java-container](https://github.com/awslabs/aws-serverless-java-container) - a Java wrapper to run Spring, Jersey, Spark, and other apps inside AWS Lambda. https://aws.amazon.com/serverless/
 
 Prerequisites
 ===
