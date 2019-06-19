@@ -8,7 +8,7 @@ Prerequisites
     * is a Java wrapper to run Spring, Jersey, Spark, and other apps inside AWS Lambda. https://aws.amazon.com/serverless/
 * AWS CLI installed
 * AWS SAM
-+ a CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM https://aws.amazon.com/serverless/sam/
+    * a CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM https://aws.amazon.com/serverless/sam/
 * IAM user with required permissions to deploy in to AWS Lambda
 
 Package & Deploy
