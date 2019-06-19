@@ -11,10 +11,18 @@ import com.example.demo.model.Movie;
 @RestController
 public class MoviesController {
     @RequestMapping(path = "/movies", method = RequestMethod.GET)
-    public List<Movie> listLambdaLanguages() {
+    public List<Movie> listMovies() {
         return Arrays.asList(
         		new Movie("Harry Potter"), 
         		new Movie("Twilight"), 
         		new Movie("X-Men"));
+    }
+    
+    @RequestMapping(path = "/movies", method = RequestMethod.GET)
+    public List<Movie> listMoviesSecondary() {
+        return Arrays.asList(
+        		new Movie("Harry Potter 2"), 
+        		new Movie("Twilight 2"), 
+        		new Movie("X-Men 2"));
     }
 }

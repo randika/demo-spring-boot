@@ -18,7 +18,11 @@ Resources:
           Properties:
             Path: /{proxy+}
             Method: any
-
+        GetResource:
+          Type: Api
+          Properties:
+            Path: /movies2
+            Method: any
 Outputs:
   DemoSpringBoot:
     Description: URL for application
