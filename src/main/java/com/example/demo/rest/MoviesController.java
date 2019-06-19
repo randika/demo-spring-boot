@@ -18,7 +18,7 @@ public class MoviesController {
         		new Movie("X-Men"));
     }
     
-    @RequestMapping(path = "/movies", method = RequestMethod.GET)
+    @RequestMapping(path = "/movies", method = RequestMethod.POST)
     public List<Movie> listMoviesSecondary() {
         return Arrays.asList(
         		new Movie("Harry Potter 2"), 
