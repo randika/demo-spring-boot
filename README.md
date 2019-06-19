@@ -20,4 +20,7 @@ aws cloudformation package --template-file sam.yaml --output-template-file targe
 
 aws cloudformation deploy --template-file target/output-sam.yaml --stack-name demo-spring-boot --capabilities CAPABILITY_IAM
 ```
+Usage
+===
+* Go to cloudformation stack: demo-spring-boot > Outputs to obtain the API Gateway endpoint OR try `aws cloudformation describe-stacks --stack-name demo-spring-boot`
 
