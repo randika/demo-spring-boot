@@ -9,8 +9,18 @@ Prerequisites
     * a CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM https://aws.amazon.com/serverless/sam/
 * IAM user with required permissions to deploy in to AWS Lambda
 
-Package & Deploy
+
+Dev  & Testing (Local) 
 ===
+Use the `boot` maven profile for local testing, this will generate the JAR with  embedded Tomcat.
+
+`mvn install -P boot` 
+
+
+Packaging & Deployment
+===
+To package the Spring Boot application for AWS Lambda, we do not need the Spring Boot maven plugin and we can configure the shade plugin to exclude the embedded Tomcat - the serverless-java-container library takes its place.
+
 ```
 mvn clean package
 
@@ -18,6 +28,7 @@ aws cloudformation package --template-file sam.yaml --output-template-file targe
 
 aws cloudformation deploy --template-file target/output-sam.yaml --stack-name demo-spring-boot --capabilities CAPABILITY_IAM
 ```
+
 Usage
 ===
 * Go to cloudformation stack: demo-spring-boot > Outputs to obtain the API Gateway endpoint OR try `aws cloudformation describe-stacks --stack-name demo-spring-boot`
