@@ -19,11 +19,8 @@ public class MoviesController {
     }
     
     @RequestMapping(path = "/movies", method = RequestMethod.POST)
-    public List<Movie> createMovies() {
+    public Movie createMovie() {
     	// This is not an actual CREATE operation  
-        return Arrays.asList(
-        		new Movie("Harry Potter 2"), 
-        		new Movie("Twilight 2"), 
-        		new Movie("X-Men 2"));
+        return new Movie("X-Men");
     }
 }
