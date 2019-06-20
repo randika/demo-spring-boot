@@ -3,7 +3,7 @@ Transform: AWS::Serverless-2016-10-31
 Description: Lambda with spring boot.
 
 Resources:
-  DemoSpringBootMoviesGet:
+  MoviesGET:
     Type: AWS::Serverless::Function
     Properties:
       Handler: com.example.demo.LambdaHandler::handleRequest
@@ -18,7 +18,7 @@ Resources:
           Properties:
             Path: /movies
             Method: GET
-  DemoSpringBootMoviesPost:
+  MoviesPost:
     Type: AWS::Serverless::Function
     Properties:
       Handler: com.example.demo.LambdaHandler::handleRequest
